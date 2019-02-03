@@ -1,0 +1,58 @@
+body{
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 200;
+    max-width: 50%;
+    background: linear-gradient(to left, #00C9FF 0%, #92FE9D 100%);
+    margin-top: 58pt;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+#header{
+    min-width: 77px;
+    max-width: 80%;
+    display: compact;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+h1 {
+    color: #FFE8C2;
+    font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 48px;
+}
+form{
+	
+    color: #FFFFFF;
+    font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+    font-style: normal;
+    font-weight: bolder;
+}
+
+span{
+    padding: 20px;
+    font-size: 18px;
+	color: #E4FFE1;
+}
+a{
+   text-decoration: none;
+	font-size: 25px;
+	color:#E4FFE1;
+}
+
+#button{
+	border-radius: 10px;
+	font-weight: 500;
+	background: #DCFFFD;
+	color: grey;
+}
+input{
+	padding: 10px;
+	background: #F0F0F0;
+	border-radius: 20px;
+}
