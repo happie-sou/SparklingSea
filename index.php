@@ -1,10 +1,10 @@
+<!DOCTYPE html>
 <html>
-<head>
-</head>
 <body>
-<?php 
-  header('Location: ');
-  exit;
-?>
+
+<script>
+  location.replace("")
+</script>
+
 </body>
-</html>
+</html> 
