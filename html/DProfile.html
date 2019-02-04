@@ -2,27 +2,39 @@
 <html>
 	<head>
 		<title>Sparkling Sea</title>
-    <link href="../css/ss.css" rel="stylesheet" type="text/css">
+
+    	<link href="../css/ss.css" rel="stylesheet" type="text/css">
+    	<link rel="stylesheet" type="text/css" href="..\css\home.css">
 	</head>
 
 	<body>
-		<div id="header">
-			<text>Hi Robin</text>
-			<a href="DProfile.html">
-			<img src="..\sources\images\d1.jpg" alt="Robin" width="128" height="128" >
-		    </a>
-		</div>
-		<div>
-        	<form>
-				<span>Robin54</span><input type="text" name="username"><br><br>
-				<span>Robin Scherbatsky</span> <input type="text" name="name"><br><br>
-				<span>Robin54@outlook.com</span><input type="email" name="email"><br><br>
-				<span>New Password</span> <input type="password" name="npwd"><br><br>
-				<span>DOB</span><input type="date" name="dob"><br><br>
-				<span>Current Password</span> <input type="password" name="cpwd" required><br><br>
-				<input type="submit" name="lb" value="Save Changes"><br><br>
-			</form>
-		</div>
+		<div class="layout1">
+			<div id="header1">
+				<h1 id="welcum">Hi Robin!!</h1>
+			</div>
 
+			<div id="sidebar">
+				<a href="HomePage.html">Home</a>
+				<a href="Dprofile.html">Profile</a>
+				<a href="SparklingSea.html">Sign Out</a>
+			</div>
+
+			<div>
+        		<form>
+        			<div class="layout">
+						<span>Robin54</span><input type="text" name="username">
+						<span>Robin Scherbatsky</span> <input type="text" name="name">
+						<span>Robin54@outlook.com</span><input type="email" name="email">
+						<span>New Password</span> <input type="password" name="npwd">
+						<span>DOB</span><input type="date" name="dob">
+						<span>Current Password</span> <input type="password" name="cpwd" required>
+					</div>
+
+					<div id='c'>
+						<input id="button2" type="submit" name="lb" value="Save Changes">
+					</div>
+				</form>
+			</div>
+		</div>
 	</body>
 </html>

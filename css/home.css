@@ -1,23 +1,43 @@
-#header{
-	height: 60;
-	width: 100%;
-	background: linear-gradient(to left, #FEAC5E 0%, #C779D0 32%, #4BC0C8 100%);
-	align-content: center;
+.layout1{
+	display: grid;
+	grid-template-columns: 1fr 4fr 1fr;
+	grid-gap: 5px 3em;
+	margin: 3em;
+}
+
+#header1{
+    grid-column: 1/4;
+    height: 5em;
+    justify-self: center;
+}
+
+#sidebar{
+	display: grid;
+	height: 170px;
+	grid-row-gap: 10px;
+	border: 1px solid white;
+	border-radius: 3px;
+	padding: 1em;
+	background-color: #CCFFCC;
+}
+
+#sidebar a{
+	text-decoration: none;
+	color:  #8FBCDB;
+	font-weight: bolder;
+	padding: 0.5em;
+	
+}
+
+#sidebar a:hover{
+	color: #CCFFCC;
+	background-color: #0099CC;
+}
+
+#welcum {
+    color: #FFE8C2;
 }
 
 body{
-    height: 400px;
-    background: linear-gradient(to left, #00C9FF 0%, #92FE9D 100%)
+	background: linear-gradient(to left, #00C9FF 0%, #92FE9D 100%);
 }
-
-text{
-	font: 
-}
-#post{
-	position:center;
-}
-
-#pimg {
-  border-radius: 50%;
-}
-
