@@ -2,9 +2,23 @@
 <html>
 	<head>
 		<title>Sparkling Sea</title>
+
 		<link rel="stylesheet" type="text/css" href="..\css\Master.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="..\css\homepage.css">
+		<link rel="stylesheet" type="text/css" href="..\css\dp.css">		
+
+		<script type="text/javascript">
+			function editable(dummy)
+			{
+				dummy.focus();
+				edit(dummy);
+			}
+
+			function edit(dummy)
+			{
+				dummy.readOnly=false;
+			}
+		</script>
 	</head>
 
 	<body>
@@ -29,88 +43,55 @@
 
 			<div class="sidebar">
 				<a href="HomePage.html" title="home">Harbour</a>
-				<a href="DP.html" title="Profile">Sketch</a>
+				<a href="DProfile.html" title="Profile">Sketch</a>
 				<a href="Signal.html" title="Message">Signal</a>
 				<a href="CrewMembers.html" title="Friends List">Crew Members</a>
 			</div>
         
         <div class="mainarea">
-        	<div id="mypost">
-        		<span contenteditable="true">Write something on your wall...</span>
-        		<div id="postbutton">        			
-        			<button class="buttons">Post now</button>
-        		</div>
+        	<div id="head"><h4>Revamp</h4>
         	</div>
+        	<form name="f">
+        		<div class="layout">
+        			<div class="ib">
+						<span class="details">Username</span><br>
+						<span class="details">Name</span><br>
+						<span class="details">Email</span><br>
+						<span class="details">Birthday</span><br>
+						<span class="details">Password</span>
+					</div>
+					
+					<div class="ib">
+						<input type="text" name="uname" class="fields" value="Robin6" readonly="true">
+						<button onclick="editable(f.uname)" type="button" class="edit">
+							<img src="../images/editicon.png" height="20px" width="20px">
+						</button>
+						<br>
 
-        	<div class="post">
-        		<div class="userinfo">
-        			<img src="../images/propic.png">
-        			<span>Username</span>
-        		</div>
-        		<div>
-        			<p class="postcontent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        			tempor incididunt.</p>
-        		</div>
-				<div class="cb">
-					<button class="buttons">Comment</button>
-				</div>		
-			</div>
+						<input type="text" name="name" class="fields" value="Robin Scherbatsky" readonly="true">
+						<button onclick="editable(f.name)" type="button" class="edit">
+							<img src="../images/editicon.png" height="20px" width="20px">
+						</button>
+						<br>
 
-			<div class="post">
-        		<div class="userinfo">
-        			<img src="../images/propic.png">
-        			<span>Username</span>
-        		</div>
-        		<div>
-        			<p class="postcontent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        			tempor incididunt.</p>
-        		</div>
-				<div class="cb">
-					<button class="buttons">Comment</button>
-				</div>		
-			</div>
+						<input type="email" name="email" class="fields" value="Robin54@outlook.com" readonly="true">
+						<button onclick="editable(f.email)" type="button" class="edit">
+							<img src="../images/editicon.png" height="20px" width="20px">
+						</button>
+						<br>
 
-			<div class="post">
-        		<div class="userinfo">
-        			<img src="../images/propic.png">
-        			<span>Username</span>
-        		</div>
-        		<div>
-        			<p class="postcontent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        			tempor incididunt.</p>
-        		</div>
-				<div class="cb">
-					<button class="buttons">Comment</button>
-				</div>		
-			</div>
+						<input type="date" name="dob" class="fields" value="1999-10-05" readonly="true">
+						<button onclick="editable(f.dob)" type="button" class="edit">
+							<img src="../images/editicon.png" height="20px" width="20px">
+						</button>
+						<br>
 
-			<div class="post">
-        		<div class="userinfo">
-        			<img src="../images/propic.png">
-        			<span>Username</span>
-        		</div>
-        		<div>
-        			<p class="postcontent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        			tempor incididunt.</p>
-        		</div>
-				<div class="cb">
-					<button class="buttons">Comment</button>
-				</div>		
-			</div>
+						<input type="password" name="cpwd" class="fields" required><br>
+					</div>
 
-			<div class="post">
-        		<div class="userinfo">
-        			<img src="../images/propic.png">
-        			<span>Username</span>
-        		</div>
-        		<div>
-        			<p class="postcontent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        			tempor incididunt.</p>
-        		</div>
-				<div class="cb">
-					<button class="buttons">Comment</button>
-				</div>		
-			</div>
+					<input id="button2" type="submit" name="lb" value="Save Changes">
+				</div>
+			</form>
 		</div>	
 
 		<div class="newsarea"> 

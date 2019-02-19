@@ -1,0 +1,21 @@
+#space
+{
+	margin: 50px;
+}
+
+#ff
+{
+	padding: 8px;
+	width: 50%;
+}
+
+#ff:focus
+{
+	border:2px solid #00bfff;
+}
+
+#b
+{
+	padding: 10px;
+	margin-left: 10px;
+}

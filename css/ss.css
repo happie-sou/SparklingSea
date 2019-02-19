@@ -1,5 +1,6 @@
 body{
     background: linear-gradient(to left, #00C9FF 0%, #92FE9D 100%);
+    background-image: url('../images/beautifulsea.jpg');
 }
 
 
@@ -10,7 +11,7 @@ body{
 
 #ss {
     color: #FFE8C2;
-    width:6em;
+    width:8em;
     margin:0 auto;
     display: block;
     float: none;
@@ -45,6 +46,7 @@ input{
 .layout>span{
     justify-self:end;
 }
+
 .layouts>input{
     justify-self:start;
 }
@@ -61,14 +63,14 @@ input{
     width: 10em;
     padding: 5px;
 }
+
 #button3{
     display: block;
     float: none;
     margin: 10px auto;
-    width: 4em;
+    width: 8em;
     padding-top: 20px;
     text-decoration: none;
     font-size: 25px;
     color:#E4FFE1;
-
 }
